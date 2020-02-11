@@ -1,0 +1,4 @@
+[submodule "librime"]
+	path = librime
+	url = https://github.com/tonyzhou/librime.git
+	branch = master
