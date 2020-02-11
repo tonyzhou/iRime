@@ -477,7 +477,8 @@ void notificationHandler(void* context_object, RimeSessionId session_id, const c
     
     @autoreleasepool {
         
-        bool res = RimeCandidateListBeginWithIndex((int)index, sessionId, &ite);
+//        bool res = RimeCandidateListBeginWithIndex((int)index, sessionId, &ite);
+        bool res = RimeCandidateListFromIndex(sessionId, &ite, (int)index);
         if (res == false) {
             return nil;
         }

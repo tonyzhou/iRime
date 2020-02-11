@@ -1,5 +1,6 @@
 platform :ios, '8.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
 
 def shared
     pod 'SVProgressHUD', '~> 1.1.2'
@@ -7,7 +8,7 @@ end
 
 target 'iRime' do
     pod 'UMengAnalytics', '~> 4.1.0'
-    pod 'InAppSettingsKit'
+    pod 'InAppSettingsKit', '2.8'
     pod 'GCDWebServer/WebUploader/CocoaLumberjack', '~> 3.3.3'
     pod 'ZipArchive', '~> 1.4.0'
     shared
@@ -15,12 +16,14 @@ target 'iRime' do
     pod 'Reachability', '~> 3.2'
     pod 'AFWebViewController', '~> 1.0'
     pod 'AGEmojiKeyboard', '~> 0.2.0'
+    pod 'librime', :path => '../librime'
 end
 
 target 'Keyboard' do
     pod 'ZipArchive', '~> 1.4.0'
     pod 'Masonry', '~> 1.0.1'
     pod 'MJRefresh', '~> 3.1.12'
+    pod 'librime', :path => '../librime'
 end
 
 post_install do |installer|

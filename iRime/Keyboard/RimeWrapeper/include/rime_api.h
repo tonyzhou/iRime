@@ -264,6 +264,9 @@ RIME_API Bool RimeCandidateListBeginWithIndex(int index, RimeSessionId session_i
 RIME_API Bool RimeCandidateListBegin(RimeSessionId session_id, RimeCandidateListIterator* iterator);
 RIME_API Bool RimeCandidateListNext(RimeCandidateListIterator* iterator);
 RIME_API void RimeCandidateListEnd(RimeCandidateListIterator* iterator);
+RIME_API Bool RimeCandidateListFromIndex(RimeSessionId session_id,
+                                             RimeCandidateListIterator* iterator,
+                                             int index);
 
 // Runtime options
 
