@@ -454,7 +454,7 @@ class Catboard: KeyboardViewController,RimeNotificationDelegate, UICollectionVie
         
         
         self.removeAllCandidateList();
-        let cl = RimeWrapper.getCandidateList(forSession: rimeSessionId_, andIndex: -1, andCount: 50) as? [String]
+        let cl = RimeWrapper.getCandidateList(forSession: rimeSessionId_, andIndex: 0, andCount: 50) as? [String]
         
         if (cl == nil) {
             self.removeAllCandidateList();
